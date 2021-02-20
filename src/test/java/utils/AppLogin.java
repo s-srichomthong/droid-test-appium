@@ -11,20 +11,24 @@ import java.util.concurrent.TimeUnit;
 public class AppLogin {
 
     private final AppiumDriver driver;
-    private String rmId;
+    private String email;
+    private String password;
 
-    public AppLogin(AppiumDriver driver, String email, String rmId) throws MalformedURLException {
+    public AppLogin(AppiumDriver driver, String email, String password) throws MalformedURLException {
         this.driver = driver;
-        this.rmId = rmId;
+        this.email = email;
+        this.password = password;
     }
 
-    public void login(){
+    public void typingLogin(){
         implicitWait(5);
-        final WebElement userName = driver.findElementById("th.co.scb.scbeasy:id/act_login_edt_username");
-        userName.sendKeys(rmId);
+        final WebElement usernameEdt = driver.findElementById("com.srichomthong.droidtest:id/username");
+        usernameEdt.sendKeys(email);
         implicitWait(2);
-        driver.findElementById("th.co.scb.scbeasy:id/act_btn_login").click();
-        implicitWait(5);
+
+        final WebElement passwordEdt = driver.findElementById("com.srichomthong.droidtest:id/password");
+        passwordEdt.sendKeys(password);
+        implicitWait(2);
     }
 
     private void implicitWait(final int seconds) {
