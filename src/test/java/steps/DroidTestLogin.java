@@ -28,8 +28,6 @@ public class DroidTestLogin {
         driver.resetApp();
         implicitWait(5);
         driver.launchApp();
-        final WebElement splash  = driver.findElementById("com.srichomthong.droidtest:id/fullscreen_content");
-        Assert.assertTrue(splash.isDisplayed());
         implicitWait(5);
 
         final AppLogin loginPage = new AppLogin(driver, email, password);
@@ -43,10 +41,10 @@ public class DroidTestLogin {
     }
 
     @Then("I should successfully loin to the application and see the Main page")
-    public void iShouldLoinToMain(){
+    public void iShouldLoginToMain(){
         implicitWait(5);
-        final WebElement landingPoint  = driver.findElementById("com.srichomthong.droidtest:id/main_landing_mock_img_top");
-        landingPoint.click();
+        final WebElement landingPoint  = driver.findElementById("com.srichomthong.droidtest:id/act_main_username");
+        Assert.assertTrue(landingPoint.isDisplayed());
     }
 
     @And("I will see welcome text of my \"([^\"]*)\"")
