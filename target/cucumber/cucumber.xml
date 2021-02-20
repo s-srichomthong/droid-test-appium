@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="261.303991">
+<testcase classname="Redeem SCB points cashback to CASA" name="Successfully redeem SCB points cashback to CASA" time="39.802168">
+<system-out><![CDATA[Given ETB SCB customer "001400000000000022345678989011" with CASA "085-3-67085-3" has loyalty points "5000" AND eligibility "Y" according to the campaign "electric bill","5321" that marketer condition set up "0.05".passed
+When customer make the bill payment transaction "1186KX18100b11","Y","bill payment","2000","2018-04-10T23:17:18+00:00" equal to redeem cashback "2000" from CASA.passed
+Then customer successfully make the bill payment transaction of CASA........passed
+And will be deducted points for cashback redemption.........................passed
+And receive cashback "100" to "085-3-67085-3"...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Redeem SCB points cashback to CASA" name="Successfully redeem SCB points cashback to CASA 2" time="47.856853">
+<system-out><![CDATA[Given ETB SCB customer "001400000000000022345678989022" with CASA "085-3-67085-4" has loyalty points "5000" AND eligibility "Y" according to the campaign "electric bill","5321" that marketer condition set up "0.05".passed
+When customer make the bill payment transaction "1186KX18100b22","Y","bill payment","2000","2018-04-15T23:17:18+00:00" equal to redeem cashback "2000" from CASA.passed
+Then customer successfully make the bill payment transaction of CASA........passed
+And will be deducted points for cashback redemption.........................passed
+And receive cashback "100" to "085-3-67085-4"...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Redeem SCB points cashback to CASA" name="Successfully redeem SCB points cashback to CASA 3" time="44.155805">
+<system-out><![CDATA[Given ETB SCB customer "001400000000000022345678989033" with CASA "085-3-67085-5" has loyalty points "5000" AND eligibility "Y" according to the campaign "electric bill","5321" that marketer condition set up "0.05".passed
+When customer make the bill payment transaction "1186KX18100b33","Y","bill payment","2000","2018-04-20T23:17:18+00:00" equal to redeem cashback "2000" from CASA.passed
+Then customer successfully make the bill payment transaction of CASA........passed
+And will be deducted points for cashback redemption.........................passed
+And receive cashback "100" to "085-3-67085-5"...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Redeem SCB points cashback to CASA" name="Unsuccessfully redeem SCB points cashback to CASA due to insufficient points  " time="43.118372">
+<system-out><![CDATA[Given ETB SCB customer "001400000000000022345678989077" with CASA "085-3-67085-6" has loyalty points "5000" AND eligibility "Y" according to the campaign "electric bill","4321" that marketer condition set up "0.05".passed
+When customer make the bill payment transaction "1186KX18100b77","Y","bill payment","10000","2018-04-12T23:17:18+00:00" equal to redeem cashback "10000" from CASA.passed
+Then customer see the "10000" and "5000"....................................passed
+And there cannot process redeem cashback due to insufficient points.........passed
+]]></system-out>
+</testcase>
+<testcase classname="Redeem SCB points cashback to CASA" name="Unsuccessfully redeem SCB points cashback to CASA due to insufficient points   2" time="43.666403">
+<system-out><![CDATA[Given ETB SCB customer "001400000000000022345678989088" with CASA "085-3-67085-7" has loyalty points "5000" AND eligibility "Y" according to the campaign "electric bill","4321" that marketer condition set up "0.05".passed
+When customer make the bill payment transaction "1186KX18100b88","Y","bill payment","10000","2018-04-22T23:17:18+00:00" equal to redeem cashback "10000" from CASA.passed
+Then customer see the "10000" and "5000"....................................passed
+And there cannot process redeem cashback due to insufficient points.........passed
+]]></system-out>
+</testcase>
+<testcase classname="Redeem SCB points cashback to CASA" name="Unsuccessfully redeem SCB points cashback to CASA due to insufficient points   3" time="42.70439">
+<system-out><![CDATA[Given ETB SCB customer "001400000000000022345678989099" with CASA "085-3-67085-8" has loyalty points "5000" AND eligibility "Y" according to the campaign "electric bill","4321" that marketer condition set up "0.05".passed
+When customer make the bill payment transaction "1186KX18100b99","Y","bill payment","10000","2018-04-24T23:17:18+00:00" equal to redeem cashback "10000" from CASA.passed
+Then customer see the "10000" and "5000"....................................passed
+And there cannot process redeem cashback due to insufficient points.........passed
+]]></system-out>
+</testcase>
+</testsuite>

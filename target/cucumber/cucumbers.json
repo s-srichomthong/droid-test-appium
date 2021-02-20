@@ -1,0 +1,1026 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Successfully redeem SCB points cashback to CASA",
+        "description": "",
+        "id": "redeem-scb-points-cashback-to-casa;successfully-redeem-scb-points-cashback-to-casa;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1688007064,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 21425830747,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "ETB SCB customer \"001400000000000022345678989011\" with CASA \"085-3-67085-3\" has loyalty points \"5000\" AND eligibility \"Y\" according to the campaign \"electric bill\",\"5321\" that marketer condition set up \"0.05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "001400000000000022345678989011",
+                  "offset": 18
+                },
+                {
+                  "val": "085-3-67085-3",
+                  "offset": 61
+                },
+                {
+                  "val": "5000",
+                  "offset": 96
+                },
+                {
+                  "val": "Y",
+                  "offset": 119
+                },
+                {
+                  "val": "electric bill",
+                  "offset": 149
+                },
+                {
+                  "val": "5321",
+                  "offset": 165
+                },
+                {
+                  "val": "0.05",
+                  "offset": 203
+                }
+              ],
+              "location": "LoyaltyRedemption.customerExistingToDBankAndEligibleForCampaign(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13487413921,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "customer make the bill payment transaction \"1186KX18100b11\",\"Y\",\"bill payment\",\"2000\",\"2018-04-10T23:17:18+00:00\" equal to redeem cashback \"2000\" from CASA",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1186KX18100b11",
+                  "offset": 44
+                },
+                {
+                  "val": "Y",
+                  "offset": 61
+                },
+                {
+                  "val": "bill payment",
+                  "offset": 65
+                },
+                {
+                  "val": "2000",
+                  "offset": 80
+                },
+                {
+                  "val": "2018-04-10T23:17:18+00:00",
+                  "offset": 87
+                },
+                {
+                  "val": "2000",
+                  "offset": 140
+                }
+              ],
+              "location": "LoyaltyRedemption.customerMakePayment(String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3200603947,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "customer successfully make the bill payment transaction of CASA",
+            "match": {
+              "location": "LoyaltyRedemption.whenCustomerSuccessfullyPayBill()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 68310,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "will be deducted points for cashback redemption",
+            "match": {
+              "location": "LoyaltyRedemption.thenShouldDedugPointForCashBack()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 244252,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "receive cashback \"100\" to \"085-3-67085-3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 18
+                },
+                {
+                  "val": "085-3-67085-3",
+                  "offset": 27
+                }
+              ],
+              "location": "LoyaltyRedemption.andShouldCashBack(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              13
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@ignore"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Successfully redeem SCB points cashback to CASA",
+        "description": "",
+        "id": "redeem-scb-points-cashback-to-casa;successfully-redeem-scb-points-cashback-to-casa;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1096373978,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 27737422204,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "ETB SCB customer \"001400000000000022345678989022\" with CASA \"085-3-67085-4\" has loyalty points \"5000\" AND eligibility \"Y\" according to the campaign \"electric bill\",\"5321\" that marketer condition set up \"0.05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "001400000000000022345678989022",
+                  "offset": 18
+                },
+                {
+                  "val": "085-3-67085-4",
+                  "offset": 61
+                },
+                {
+                  "val": "5000",
+                  "offset": 96
+                },
+                {
+                  "val": "Y",
+                  "offset": 119
+                },
+                {
+                  "val": "electric bill",
+                  "offset": 149
+                },
+                {
+                  "val": "5321",
+                  "offset": 165
+                },
+                {
+                  "val": "0.05",
+                  "offset": 203
+                }
+              ],
+              "location": "LoyaltyRedemption.customerExistingToDBankAndEligibleForCampaign(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15851238334,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "customer make the bill payment transaction \"1186KX18100b22\",\"Y\",\"bill payment\",\"2000\",\"2018-04-15T23:17:18+00:00\" equal to redeem cashback \"2000\" from CASA",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1186KX18100b22",
+                  "offset": 44
+                },
+                {
+                  "val": "Y",
+                  "offset": 61
+                },
+                {
+                  "val": "bill payment",
+                  "offset": 65
+                },
+                {
+                  "val": "2000",
+                  "offset": 80
+                },
+                {
+                  "val": "2018-04-15T23:17:18+00:00",
+                  "offset": 87
+                },
+                {
+                  "val": "2000",
+                  "offset": 140
+                }
+              ],
+              "location": "LoyaltyRedemption.customerMakePayment(String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3171689237,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "customer successfully make the bill payment transaction of CASA",
+            "match": {
+              "location": "LoyaltyRedemption.whenCustomerSuccessfullyPayBill()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26535,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "will be deducted points for cashback redemption",
+            "match": {
+              "location": "LoyaltyRedemption.thenShouldDedugPointForCashBack()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 102691,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "receive cashback \"100\" to \"085-3-67085-4\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 18
+                },
+                {
+                  "val": "085-3-67085-4",
+                  "offset": 27
+                }
+              ],
+              "location": "LoyaltyRedemption.andShouldCashBack(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              13
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@ignore"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Successfully redeem SCB points cashback to CASA",
+        "description": "",
+        "id": "redeem-scb-points-cashback-to-casa;successfully-redeem-scb-points-cashback-to-casa;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1149946643,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 23729836522,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "ETB SCB customer \"001400000000000022345678989033\" with CASA \"085-3-67085-5\" has loyalty points \"5000\" AND eligibility \"Y\" according to the campaign \"electric bill\",\"5321\" that marketer condition set up \"0.05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "001400000000000022345678989033",
+                  "offset": 18
+                },
+                {
+                  "val": "085-3-67085-5",
+                  "offset": 61
+                },
+                {
+                  "val": "5000",
+                  "offset": 96
+                },
+                {
+                  "val": "Y",
+                  "offset": 119
+                },
+                {
+                  "val": "electric bill",
+                  "offset": 149
+                },
+                {
+                  "val": "5321",
+                  "offset": 165
+                },
+                {
+                  "val": "0.05",
+                  "offset": 203
+                }
+              ],
+              "location": "LoyaltyRedemption.customerExistingToDBankAndEligibleForCampaign(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15923134443,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "customer make the bill payment transaction \"1186KX18100b33\",\"Y\",\"bill payment\",\"2000\",\"2018-04-20T23:17:18+00:00\" equal to redeem cashback \"2000\" from CASA",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1186KX18100b33",
+                  "offset": 44
+                },
+                {
+                  "val": "Y",
+                  "offset": 61
+                },
+                {
+                  "val": "bill payment",
+                  "offset": 65
+                },
+                {
+                  "val": "2000",
+                  "offset": 80
+                },
+                {
+                  "val": "2018-04-20T23:17:18+00:00",
+                  "offset": 87
+                },
+                {
+                  "val": "2000",
+                  "offset": 140
+                }
+              ],
+              "location": "LoyaltyRedemption.customerMakePayment(String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3352771161,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "customer successfully make the bill payment transaction of CASA",
+            "match": {
+              "location": "LoyaltyRedemption.whenCustomerSuccessfullyPayBill()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28766,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "will be deducted points for cashback redemption",
+            "match": {
+              "location": "LoyaltyRedemption.thenShouldDedugPointForCashBack()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87124,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "receive cashback \"100\" to \"085-3-67085-5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 18
+                },
+                {
+                  "val": "085-3-67085-5",
+                  "offset": 27
+                }
+              ],
+              "location": "LoyaltyRedemption.andShouldCashBack(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              13
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@ignore"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Unsuccessfully redeem SCB points cashback to CASA due to insufficient points  ",
+        "description": "",
+        "id": "redeem-scb-points-cashback-to-casa;unsuccessfully-redeem-scb-points-cashback-to-casa-due-to-insufficient-points- ;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1116670174,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 24315526442,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "ETB SCB customer \"001400000000000022345678989077\" with CASA \"085-3-67085-6\" has loyalty points \"5000\" AND eligibility \"Y\" according to the campaign \"electric bill\",\"4321\" that marketer condition set up \"0.05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "001400000000000022345678989077",
+                  "offset": 18
+                },
+                {
+                  "val": "085-3-67085-6",
+                  "offset": 61
+                },
+                {
+                  "val": "5000",
+                  "offset": 96
+                },
+                {
+                  "val": "Y",
+                  "offset": 119
+                },
+                {
+                  "val": "electric bill",
+                  "offset": 149
+                },
+                {
+                  "val": "4321",
+                  "offset": 165
+                },
+                {
+                  "val": "0.05",
+                  "offset": 203
+                }
+              ],
+              "location": "LoyaltyRedemption.customerExistingToDBankAndEligibleForCampaign(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14380849220,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "customer make the bill payment transaction \"1186KX18100b77\",\"Y\",\"bill payment\",\"10000\",\"2018-04-12T23:17:18+00:00\" equal to redeem cashback \"10000\" from CASA",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1186KX18100b77",
+                  "offset": 44
+                },
+                {
+                  "val": "Y",
+                  "offset": 61
+                },
+                {
+                  "val": "bill payment",
+                  "offset": 65
+                },
+                {
+                  "val": "10000",
+                  "offset": 80
+                },
+                {
+                  "val": "2018-04-12T23:17:18+00:00",
+                  "offset": 88
+                },
+                {
+                  "val": "10000",
+                  "offset": 141
+                }
+              ],
+              "location": "LoyaltyRedemption.customerMakePayment(String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3305277781,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "customer see the \"10000\" and \"5000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10000",
+                  "offset": 18
+                },
+                {
+                  "val": "5000",
+                  "offset": 30
+                }
+              ],
+              "location": "LoyaltyRedemption.andCustomerSee(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              12
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48305,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "there cannot process redeem cashback due to insufficient points",
+            "match": {
+              "location": "LoyaltyRedemption.andCannotPrecessRedeem()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@ignore"
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Unsuccessfully redeem SCB points cashback to CASA due to insufficient points  ",
+        "description": "",
+        "id": "redeem-scb-points-cashback-to-casa;unsuccessfully-redeem-scb-points-cashback-to-casa-due-to-insufficient-points- ;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1023113740,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 24873528308,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "ETB SCB customer \"001400000000000022345678989088\" with CASA \"085-3-67085-7\" has loyalty points \"5000\" AND eligibility \"Y\" according to the campaign \"electric bill\",\"4321\" that marketer condition set up \"0.05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "001400000000000022345678989088",
+                  "offset": 18
+                },
+                {
+                  "val": "085-3-67085-7",
+                  "offset": 61
+                },
+                {
+                  "val": "5000",
+                  "offset": 96
+                },
+                {
+                  "val": "Y",
+                  "offset": 119
+                },
+                {
+                  "val": "electric bill",
+                  "offset": 149
+                },
+                {
+                  "val": "4321",
+                  "offset": 165
+                },
+                {
+                  "val": "0.05",
+                  "offset": 203
+                }
+              ],
+              "location": "LoyaltyRedemption.customerExistingToDBankAndEligibleForCampaign(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14477029714,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "customer make the bill payment transaction \"1186KX18100b88\",\"Y\",\"bill payment\",\"10000\",\"2018-04-22T23:17:18+00:00\" equal to redeem cashback \"10000\" from CASA",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1186KX18100b88",
+                  "offset": 44
+                },
+                {
+                  "val": "Y",
+                  "offset": 61
+                },
+                {
+                  "val": "bill payment",
+                  "offset": 65
+                },
+                {
+                  "val": "10000",
+                  "offset": 80
+                },
+                {
+                  "val": "2018-04-22T23:17:18+00:00",
+                  "offset": 88
+                },
+                {
+                  "val": "10000",
+                  "offset": 141
+                }
+              ],
+              "location": "LoyaltyRedemption.customerMakePayment(String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3292710552,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "customer see the \"10000\" and \"5000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10000",
+                  "offset": 18
+                },
+                {
+                  "val": "5000",
+                  "offset": 30
+                }
+              ],
+              "location": "LoyaltyRedemption.andCustomerSee(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              12
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20482,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "there cannot process redeem cashback due to insufficient points",
+            "match": {
+              "location": "LoyaltyRedemption.andCannotPrecessRedeem()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@ignore"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Unsuccessfully redeem SCB points cashback to CASA due to insufficient points  ",
+        "description": "",
+        "id": "redeem-scb-points-cashback-to-casa;unsuccessfully-redeem-scb-points-cashback-to-casa-due-to-insufficient-points- ;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 910562856,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Common.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 24479663599,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "ETB SCB customer \"001400000000000022345678989099\" with CASA \"085-3-67085-8\" has loyalty points \"5000\" AND eligibility \"Y\" according to the campaign \"electric bill\",\"4321\" that marketer condition set up \"0.05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "001400000000000022345678989099",
+                  "offset": 18
+                },
+                {
+                  "val": "085-3-67085-8",
+                  "offset": 61
+                },
+                {
+                  "val": "5000",
+                  "offset": 96
+                },
+                {
+                  "val": "Y",
+                  "offset": 119
+                },
+                {
+                  "val": "electric bill",
+                  "offset": 149
+                },
+                {
+                  "val": "4321",
+                  "offset": 165
+                },
+                {
+                  "val": "0.05",
+                  "offset": 203
+                }
+              ],
+              "location": "LoyaltyRedemption.customerExistingToDBankAndEligibleForCampaign(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13982177300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "customer make the bill payment transaction \"1186KX18100b99\",\"Y\",\"bill payment\",\"10000\",\"2018-04-24T23:17:18+00:00\" equal to redeem cashback \"10000\" from CASA",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1186KX18100b99",
+                  "offset": 44
+                },
+                {
+                  "val": "Y",
+                  "offset": 61
+                },
+                {
+                  "val": "bill payment",
+                  "offset": 65
+                },
+                {
+                  "val": "10000",
+                  "offset": 80
+                },
+                {
+                  "val": "2018-04-24T23:17:18+00:00",
+                  "offset": 88
+                },
+                {
+                  "val": "10000",
+                  "offset": 141
+                }
+              ],
+              "location": "LoyaltyRedemption.customerMakePayment(String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3331958032,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "customer see the \"10000\" and \"5000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10000",
+                  "offset": 18
+                },
+                {
+                  "val": "5000",
+                  "offset": 30
+                }
+              ],
+              "location": "LoyaltyRedemption.andCustomerSee(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              12
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28168,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "there cannot process redeem cashback due to insufficient points",
+            "match": {
+              "location": "LoyaltyRedemption.andCannotPrecessRedeem()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@ignore"
+          }
+        ]
+      }
+    ],
+    "name": "Redeem SCB points cashback to CASA",
+    "description": "",
+    "id": "redeem-scb-points-cashback-to-casa",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/loyalty-profile/RedeemCashbackviaCASA.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@ignore"
+      }
+    ]
+  }
+]
