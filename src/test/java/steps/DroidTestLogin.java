@@ -48,8 +48,11 @@ public class DroidTestLogin {
     }
 
     @And("I will see welcome text of my \"([^\"]*)\"")
-    public void iWillSeeMyName() {
-
+    public void iWillSeeMyName(String name) {
+        implicitWait(5);
+        final WebElement landingPoint  = driver.findElementById("com.srichomthong.droidtest:id/act_main_username");
+        Assert.assertTrue(landingPoint.isDisplayed());
+        Assert.assertEquals(name, landingPoint.getText());
     }
 
     private void implicitWait(final int seconds) {
