@@ -18,8 +18,8 @@ public class BaseSettings {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("fullReset", "false");
         capabilities.setCapability("noReset", "true");
-        capabilities.setCapability("appPackage", "th.co.scb.scbeasy");
-        capabilities.setCapability("appActivity", "th.co.scb.scbeasy.login.LoginActivity");
+        capabilities.setCapability("appPackage", "com.srichomthong.droidtest");
+        capabilities.setCapability("appActivity", "com.srichomthong.droidtest.activity.SplashActivity");
         capabilities.setCapability("autoLaunch", "false");
 
         if (driver == null)

@@ -28,9 +28,10 @@ public class DroidTestLogin {
         driver.resetApp();
         implicitWait(5);
         driver.launchApp();
-        final WebElement splash  = driver.findElementById("th.co.scb.scbeasy:id/fullscreen_content");
+        final WebElement splash  = driver.findElementById("com.srichomthong.droidtest:id/fullscreen_content");
         Assert.assertTrue(splash.isDisplayed());
         implicitWait(5);
+
         final AppLogin loginPage = new AppLogin(driver, email, password);
         loginPage.typingLogin();
     }
@@ -44,7 +45,7 @@ public class DroidTestLogin {
     @Then("I should successfully loin to the application and see the Main page")
     public void iShouldLoinToMain(){
         implicitWait(5);
-        final WebElement landingPoint  = driver.findElementById("th.co.scb.scbeasy:id/main_landing_mock_img_top");
+        final WebElement landingPoint  = driver.findElementById("com.srichomthong.droidtest:id/main_landing_mock_img_top");
         landingPoint.click();
     }
 
