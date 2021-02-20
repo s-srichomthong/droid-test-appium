@@ -1,6 +1,6 @@
 @ignore
 
-Feature: Redeem SCB points cashback to credit card via EDC
+Feature: Login app
 
   Scenario Outline: Successfully login to DroidTest application
     Given I'm a application user I login with "<email>" and password "<password>"
