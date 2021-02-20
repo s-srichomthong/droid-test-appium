@@ -9,8 +9,8 @@ Feature: Redeem SCB points cashback to credit card via EDC
     And  I will see welcome text of my "<name>"
 
     Examples:
-      |             email|       password |         name |
-      |  email@email.com |      password  |         email|
-      |jaylers@email.com |      password  |         jaylers|
-      |  preaw@email.com |      password  |         preaw|
-      |  test@email.com  |      password  |          test|
+      |             email|       password |         name      |
+      |  email@email.com |      password  |      Welcome email|
+      |jaylers@email.com |      password  |      Welcome jaylers|
+      |  preaw@email.com |      password  |      Welcome preaw|
+      |  test@email.com  |      password  |      Welcome test|
